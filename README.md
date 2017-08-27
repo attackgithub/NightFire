@@ -1,5 +1,6 @@
 # NightFire
 Proof of Concept post-exploitation dropper and RAT toolkit targeting macOS and Linux desktop.
+
 NightFire is written in v0.23 of the Crystal compiled programming language.
 
 ## Roadmap

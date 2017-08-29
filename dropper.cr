@@ -57,7 +57,7 @@ def get_binary()
 				case response.status_code
 				when 200
 					# OK. Fetch binary via GET.
-					File.write(BINARY_NAME, response.body_io)
+					File.write(ENCRYPTED_BINARY_NAME, response.body_io)
 					return true
 				when 400
 					# Connection might be tampered with (ie. transparent proxy).

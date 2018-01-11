@@ -88,8 +88,8 @@ def get_binary()
 end
 
 def decrypt_binary()
-	# Primary reason for encryption is to prevent binary from read during transit by PSPs.
-	# PSP can still read when it hits the disk though. Have a few theories as to preventing/mitigating that.
+	# Primary reason for encryption is to prevent binary from read during transit by IDS/IPS.
+	# Payload can still read when it hits the disk though. Have a few theories as to preventing/mitigating that.
 	begin
 		enter_binary_directory()
 		if File.file?(ENCRYPTED_BINARY_NAME)
